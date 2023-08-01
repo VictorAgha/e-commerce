@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->foreignId('category_id')->constrained('categories');
-            $table->text('category');
+            $table->string('category_name');
             $table->string('image')->nullable();
             $table->decimal('price', 8, 2);
             $table->timestamps();
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('products');
+        //
     }
 };

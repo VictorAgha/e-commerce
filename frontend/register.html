@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <title>Create-account</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-info">
+            <h2>Create Account</h2>
+        </div>
+        <div class="container-signin">
+            <input class="input-email" id="name_in" placeholder="Name" required>
+            <input class="input-email" id="email_in" placeholder="Email" required>
+            <input class="input-password" id="password" placeholder="Enter your password" required>
+            
+        </div>
+        <div class="role">
+            <h2>Role:</h2>
+            <div class="roles">
+                <label for="role-user"> User</label>
+                <input type="checkbox" id="role-user">
+                <label for="role-admin"> Admin</label>
+                <input type="checkbox" id="role-admin">
+            </div>
+        </div>
+        <div class="container-next">
+            <div class="container-login">
+                <button id="register">Register</button>
+            </div>
+        </div>
+    </div>
+    <script src="script/register.js"></script>
+</body>
+</html>
